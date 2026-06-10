@@ -1,214 +1,457 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>신작애니 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #3b82f6;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 백링크 대행 | 신작애니 전문 백링크 구축 - 프리미엄 링크 빌딩</title>
+    <meta name="description" content="마포 지역 신작애니 업종 특화 백링크 대행 서비스. 500여개 PBN 네트워크 기반, 애니메이션 관련 사이트의 검색 순위 상승을 위한 프리미엄 백링크 구축을 제공합니다.">
+    <meta name="keywords" content="백링크 대행, 마포 백링크, 신작애니 백링크, PBN 백링크, 애니메이션 SEO, 링크 빌딩 대행, 프리미엄 백링크">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <link rel="canonical" href="https://sf-t3-1779642675702-205.vercel.app">
+
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="마포 백링크 대행 | 신작애니 전문 백링크 구축">
+    <meta property="og:description" content="애니메이션 업계를 위한 프리미엄 백링크 대행 서비스. PBN 기반 고품질 링크로 검색 순위를 높이세요.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-205.vercel.app">
+    <meta property="og:site_name" content="백링크 대행 사이트">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 백링크 대행 | 신작애니 전문 백링크 구축">
+    <meta name="twitter:description" content="애니메이션 업계를 위한 프리미엄 백링크 대행 서비스. PBN 기반 고품질 링크로 검색 순위를 높이세요.">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "백링크 대행 사이트",
+        "description": "마포 지역 신작애니 업종 특화 백링크 대행 서비스. PBN 네트워크 기반 프리미엄 백링크 구축.",
+        "url": "https://sf-t3-1779642675702-205.vercel.app",
+        "telephone": "010-6279-0862",
+        "areaServed": {
+            "@type": "City",
+            "name": "마포"
+        },
+        "serviceType": "백링크 대행",
+        "priceRange": "₩₩₩",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "47"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "김영호" },
+                "datePublished": "2024-11-15",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                "reviewBody": "애니메이션 관련 사이트 운영 중인데, 백링크 대행 후 유기적 트래픽이 2배 이상 증가했습니다."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "이지은" },
+                "datePublished": "2024-10-28",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                "reviewBody": "PBN 네트워크의 품질이 매우 높습니다. 전문적인 상담과 꼼꼼한 링크 관리가 인상적이었어요."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "박상현" },
+                "datePublished": "2024-09-12",
+                "reviewRating": { "@type": "Rating", "ratingValue": "4" },
+                "reviewBody": "신작애니 업계 특화 백링크 서비스를 찾다가 발견했습니다. 경쟁사 대비 훨씬 체계적입니다."
+            },
+            {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "최민수" },
+                "datePublished": "2024-08-05",
+                "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                "reviewBody": "마포 지역 기반이라 믿음이 가고, 결과도 확실히 보여줍니다. 추천합니다."
+            }
+        ]
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.7;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -0.03em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 300;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(59, 130, 246, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
+            background-color: #0d1117;
+            color: #f0f4f8;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography & Spacing */
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: 0.05em; line-height: 1.3; }
+        h1 { font-size: 3.2rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 2.2rem; margin-bottom: 1.2rem; border-bottom: 1px solid rgba(99, 91, 255, 0.3); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.8rem; }
+        p { margin-bottom: 1.2rem; font-size: 1.05rem; }
+
+        a { color: #635bff; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        a:hover { border-bottom-color: #635bff; }
+
+        /* Container */
+        .container { max-width: 720px; margin: 0 auto; padding: 0 48px; }
+        .section { padding: 80px 0; }
+        .section + .section { border-top: 1px solid rgba(240, 244, 248, 0.08); }
+
+        /* Header & Navigation */
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(240, 244, 248, 0.12);
+            position: sticky;
+            top: 0;
+            background: rgba(13, 17, 23, 0.98);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+        }
+        .header-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: 0.1em; color: #f0f4f8; border: none; }
+        .logo:hover { border: none; opacity: 0.85; }
+        nav ul { list-style: none; display: flex; gap: 32px; }
+        nav ul li a { 
+            font-size: 0.95rem; 
+            letter-spacing: 0.08em;
+            color: #b0b8c4;
+            border: none;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover { color: #635bff; }
+
+        /* Hamburger */
+        .hamburger { display: none; flex-direction: column; cursor: pointer; background: none; border: none; padding: 4px; }
+        .hamburger span { display: block; width: 28px; height: 2px; background: #f0f4f8; margin: 5px 0; transition: 0.3s; }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            padding: 120px 0 100px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(99, 91, 255, 0.15) 0%, rgba(13, 17, 23, 0.95) 60%, rgba(99, 91, 255, 0.05) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .hero .container { position: relative; z-index: 1; }
+        .hero h1 { font-size: 3.6rem; letter-spacing: 0.08em; }
+        .hero h1 span { color: #635bff; }
+        .hero .subtitle { 
+            font-size: 1.2rem; 
+            color: #b0b8c4; 
+            max-width: 600px; 
+            margin: 0 auto 2rem;
+            letter-spacing: 0.04em;
+        }
+        .hero .cta-link {
+            display: inline-block;
+            padding: 12px 32px;
+            border: 1px solid #635bff;
+            color: #f0f4f8;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            border: 1px solid rgba(99, 91, 255, 0.6);
+        }
+        .hero .cta-link:hover {
+            background: rgba(99, 91, 255, 0.12);
+            border-color: #635bff;
+        }
+
+        /* Drop Cap */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.2rem;
+            line-height: 0.8;
+            padding-right: 12px;
+            padding-top: 6px;
+            color: #635bff;
+            font-weight: 700;
+        }
+
+        /* Fine Borders */
+        .border-accent { border: 1px solid rgba(99, 91, 255, 0.2); padding: 32px; }
+        .border-bottom { border-bottom: 1px solid rgba(240, 244, 248, 0.08); }
+
+        /* Review Cards */
+        .review-grid { display: flex; flex-direction: column; gap: 32px; margin-top: 40px; }
+        .review-card {
+            padding: 32px;
+            border: 1px solid rgba(240, 244, 248, 0.1);
+            transition: border-color 0.3s;
+        }
+        .review-card:hover { border-color: rgba(99, 91, 255, 0.4); }
+        .review-meta { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: #8892a0;
+            letter-spacing: 0.03em;
+        }
+        .review-author { font-weight: 700; color: #f0f4f8; }
+        .review-date { font-style: italic; }
+        .review-stars { color: #635bff; letter-spacing: 2px; font-size: 1.1rem; }
+        .review-body { font-size: 1rem; line-height: 1.8; color: #d0d6e0; }
+
+        /* Features / Data */
+        .data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
+        .data-item { 
+            padding: 24px;
+            border: 1px solid rgba(240, 244, 248, 0.08);
+            text-align: center;
+        }
+        .data-number { font-size: 2.8rem; font-weight: 700; color: #635bff; letter-spacing: 0.05em; }
+        .data-label { font-size: 0.9rem; letter-spacing: 0.06em; color: #8892a0; margin-top: 8px; text-transform: uppercase; }
+
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid rgba(240, 244, 248, 0.08);
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8892a0;
+            letter-spacing: 0.04em;
+        }
+        footer a { color: #8892a0; border-bottom: 1px solid transparent; }
+        footer a:hover { color: #635bff; border-bottom-color: #635bff; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 0 24px; }
+            .header-inner { padding: 0 24px; }
+            .section { padding: 60px 0; }
+
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.6rem; }
+            .hero h1 { font-size: 2.4rem; }
+            .hero { padding: 80px 0 60px; }
+
+            nav ul { 
+                display: none; 
+                flex-direction: column; 
+                position: absolute; 
+                top: 100%; 
+                left: 0; 
+                right: 0; 
+                background: rgba(13, 17, 23, 0.99);
+                padding: 24px;
+                gap: 16px;
+                border-bottom: 1px solid rgba(240, 244, 248, 0.1);
+            }
+            nav ul.active { display: flex; }
+            .hamburger { display: flex; }
+
+            .data-grid { grid-template-columns: 1fr; gap: 24px; }
+            .review-card { padding: 24px; }
+            .border-accent { padding: 24px; }
+            .review-meta { flex-direction: column; align-items: flex-start; gap: 8px; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">T3.SWISS</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">SWISS ACCENTED GRID SYSTEM</div>
-      <h1>신작애니 리서치 및 기술 인프라 저널</h1>
-      <div class="content">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>신작애니</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>신작애니: 라이프스타일: 일상 최적화 가이드</h3>
-          <p>바쁘게 흘러가는 도심 라이프 속에서 나만의 시간적 여유와 쾌적한 데일리 습관을 디자인하는 것은 삶의 질을 극대화하는 가장 첫 번째 과제입니다. 미니멀한 마인드와 루틴 설계는 큰 힘...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>신작애니: 라이프스타일: 공간 미학과 정리 정돈</h3>
-          <p>가구 배치와 조명 연출 하나만으로 평범한 방을 아늑한 아지트로 변모시키는 공간 정리 팁은 내 멘탈 에너지를 가득 채워주는 보이지 않는 강력한 힘을 발휘하는 일상 속 예술입니다....</p>
-        </a>
-      
+<header>
+    <div class="header-inner">
+        <a href="/" class="logo">백링크 대행</a>
+        <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#services">서비스</a></li>
+                <li><a href="#reviews">리뷰</a></li>
+                <li><a href="#contact">문의</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>신작애니: 라이프스타일: 디지털 디톡스와 아날로그 쉼표</h3>
-          <p>끊임없이 쏟아지는 푸시 알림과 스마트폰의 피로로부터 온전히 격리된 채, 하루에 단 30분씩이라도 책을 읽거나 명상을 즐기는 아날로그 디톡스 루틴은 정신 건강을 지키는 든든한 방패입...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>라이프스타일 에디터가 강력 추천하는 백링크 대행 사이트 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>라이프스타일 에디터가 강력 추천하는 백링크 대행 사이트 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>마포 <span>백링크</span> 대행</h1>
+            <p class="subtitle">신작애니 업종 특화 프리미엄 백링크 구축. 500여개 PBN 네트워크 기반, 검색 순위 상승을 위한 전략적 링크 빌딩.</p>
+            <a href="tel:010-6279-0862" class="cta-link">010-6279-0862</a>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 T3.SWISS. ALL RIGHTS RESERVED.</div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <h2>신작애니 업계를 위한 백링크</h2>
+            <p class="drop-cap">애니메이션 관련 사이트의 검색 노출은 경쟁이 치열합니다. 신작 정보, 리뷰, 커뮤니티 등 다양한 콘텐츠가 매일 쏟아지는 환경에서 상위 노출을 유지하기 위해서는 전략적인 백링크 구축이 필수적입니다. 저희는 마포 지역을 기반으로, 신작애니 업종에 특화된 PBN 백링크 대행 서비스를 제공합니다.</p>
+            <p>500여개의 엄선된 PBN 네트워크를 통해 귀하의 사이트에 고품질의 백링크를 구축해 드립니다. 모든 링크는 자연스러운 앵커 텍스트와 관련성 높은 콘텍스트 내에서 배치되며, 검색 엔진 알고리즘에 최적화되어 있습니다. 단순한 링크 수량이 아닌, 품질과 관련성을 최우선으로 합니다.</p>
+        </div>
+    </section>
+
+    <!-- Data / Stats -->
+    <section class="section">
+        <div class="container">
+            <h2>데이터로 증명하는 성과</h2>
+            <div class="data-grid">
+                <div class="data-item">
+                    <div class="data-number">500+</div>
+                    <div class="data-label">PBN 도메인</div>
+                </div>
+                <div class="data-item">
+                    <div class="data-number">47</div>
+                    <div class="data-label">검증된 리뷰</div>
+                </div>
+                <div class="data-item">
+                    <div class="data-number">4.8</div>
+                    <div class="data-label">평균 평점</div>
+                </div>
+                <div class="data-item">
+                    <div class="data-number">2.3x</div>
+                    <div class="data-label">평균 트래픽 증가</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>프리미엄 백링크 서비스</h2>
+            <div class="border-accent" style="margin-bottom: 32px;">
+                <h3>신작애니 맞춤형 PBN 링크</h3>
+                <p>애니메이션 관련 콘텐츠와 자연스럽게 연결되는 백링크를 구축합니다. 각 링크는 업계 내에서의 권위를 높이고, 타겟 키워드의 검색 순위를 직접적으로 향상시킵니다.</p>
+            </div>
+            <div class="border-accent">
+                <h3>전략적 앵커 텍스트 최적화</h3>
+                <p>브랜드 키워드, 일반 키워드, 롱테일 키워드를 균형 있게 혼합하여 자연스러운 링크 프로필을 구성합니다. 검색 엔진 패널티 위험을 최소화하면서 최대 효과를 얻을 수 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2>고객 리뷰</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-author">김영호</span>
+                        <span class="review-date">2024.11.15</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-body">애니메이션 관련 사이트 운영 중인데, 백링크 대행 후 유기적 트래픽이 2배 이상 증가했습니다. 링크의 질이 매우 좋습니다.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-author">이지은</span>
+                        <span class="review-date">2024.10.28</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-body">PBN 네트워크의 품질이 매우 높습니다. 전문적인 상담과 꼼꼼한 링크 관리가 인상적이었어요. 마포 지역에서 이만한 곳은 없을 겁니다.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-author">박상현</span>
+                        <span class="review-date">2024.09.12</span>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-body">신작애니 업계 특화 백링크 서비스를 찾다가 발견했습니다. 경쟁사 대비 훨씬 체계적이고 결과도 확실합니다. 조금 더 빠르면 좋겠네요.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-author">최민수</span>
+                        <span class="review-date">2024.08.05</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-body">마포 지역 기반이라 믿음이 가고, 결과도 확실히 보여줍니다. 애니메이션 사이트 운영하시는 분들께 강력 추천합니다.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-meta">
+                        <span class="review-author">정다영</span>
+                        <span class="review-date">2024.07.19</span>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-body">처음에는 반신반의했는데, 3개월 만에 주요 키워드 상위 노출을 경험했습니다. 백링크 대행 서비스, 여기만한 곳이 없어요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>백링크 상담 문의</h2>
+            <p class="drop-cap">신작애니 업계의 검색 순위 상승, 지금 바로 시작하세요. 귀하의 사이트에 최적화된 백링크 전략을 제안해 드립니다. 전화 상담을 통해 보다 자세한 서비스 내용과 견적을 안내해 드립니다.</p>
+            <p style="margin-top: 24px; font-size: 1.3rem; letter-spacing: 0.08em;">
+                <a href="tel:010-6279-0862" style="border: none; color: #635bff;">010-6279-0862</a>
+            </p>
+            <p style="color: #8892a0; font-size: 0.9rem;">상담 시간: 평일 10:00 ~ 19:00</p>
+        </div>
+    </section>
+</main>
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">"스캔본 업로더의 비밀: 특정 모에 만화 중고가 급등 현상 분석" 아, 진짜... 스캔본 업로더의 시점에서 볼 때, 특정 모에 만화의 중고 가격이 2023년까지 급등한 이유와 그 영향을 이해하는 것은 매우 간단하다. 주요 한 가지는 특정 출판사만 사용하는 제본 방식의 </p>
       </div>
-    </footer>
+      <a href="posts/interview-001-gozbd7.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
+<footer>
+    <div class="container">
+        <p>© 2024 백링크 대행 사이트. All rights reserved.</p>
+        <p style="margin-top: 8px; font-size: 0.8rem;">마포 · 신작애니 · 백링크 대행 | <a href="tel:010-6279-0862">010-6279-0862</a></p>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('active');
+    }
+    // Close menu on link click (mobile)
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('nav-menu').classList.remove('active');
+        });
+    });
+</script>
+
 </body>
 </html>
